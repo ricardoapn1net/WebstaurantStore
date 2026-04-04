@@ -1,5 +1,5 @@
 # WebstaurantStore
-WebstaurantStore - WebstaurantStore Code Screen Task
+JMeter script is located inside the "Outlet" folder
 
 # *** WebstaurantStore Code Screen Task ***
 - This script will extract all products pages URLs from the three outlet pages.
