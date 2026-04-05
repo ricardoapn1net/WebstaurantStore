@@ -15,7 +15,7 @@
   - Throughput is controlled by the &quot;Constant Througput Timer&quot;.
 * The &quot;clarkAssociates_Outlet_04_product_page&quot; transaction will have the average transaction response time from all the loaded product pages.
   - If there is a need to see individual product pages response times in the resulting report, it can be accomplished by unselecting the &quot;Generate parent sample&quot; of the transaction controller.
-* Test will run for a duration of 15 minutes
+* Test will run for a duration of 15 minutes.
 * Values of the User Defined Variables can be changed from the command line when running the load test from the CLI except for the hostname which is hardcoded.</stringProp>
       <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -65,7 +65,7 @@
         </elementProp>
       </SetupThreadGroup>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="clarkAssociates_Outlet">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="clarkAssociates_Outlet" enabled="true">
         <stringProp name="TestPlan.comments">Scratch &amp; Dent Outlet Home Page</stringProp>
         <stringProp name="ThreadGroup.num_threads">${threads}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${rampUp}</stringProp>
@@ -3325,11 +3325,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <stringProp name="LoopController.loops">${loopCount}</stringProp>
         </LoopController>
         <hashTree>
-          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer">
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
             <intProp name="calcMode">4</intProp>
             <stringProp name="throughput">${throughput}</stringProp>
           </ConstantThroughputTimer>
@@ -3457,7 +3457,7 @@
               </ResponseAssertion>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="clarkAssociates_Outlet_04_product_page - getdynamicdata">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="clarkAssociates_Outlet_04_product_page - getdynamicdata" enabled="true">
               <stringProp name="HTTPSampler.path">/api:edgecache/getdynamicdata</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
