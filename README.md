@@ -1,5 +1,5 @@
 # WebstaurantStore
-JMeter script is located inside the "Outlet" folder
+JMeter script "outlet.jmx" is located inside the "Outlet" folder.
 
 # *** WebstaurantStore Code Screen Task ***
 - This script will extract all products pages URLs from the three outlet pages.
