@@ -13,6 +13,6 @@ JMeter script "Outlet.jmx" is located inside the "Outlet" folder.
   - Throughput is set to 75 requests/min (5 transactions/min).
   - Throughput is controlled by the "Constant Througput Timer".
 - The "clarkAssociates_Outlet_04_product_page" transaction will have the average transaction response time from all the loaded product pages.
-  - If there is a need to see individual product pages response times in the resulting report, it can be accomplished by unselecting the "Generate parent sample" of the transaction controller.
+  - If there is a need to see individual product pages response times in the resulting report, it can be accomplished by unselecting the "Generate parent sample" of the transaction controller and re-running the test.
 - Test will run for a duration of 15 minutes
 - Values of the User Defined Variables can be changed from the command line when running the load test from the CLI except for the hostname which is hardcoded.
