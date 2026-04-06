@@ -16,6 +16,6 @@
 - The "clarkAssociates_Outlet_04_product_page" transaction will have the average transaction response time from all the loaded product pages.
   - If there is a need to see individual product pages response times in the resulting report, it can be accomplished by one of the following 2 options
     - Set jmeter.save.saveservice.subresults=false in your user.properties file. Then, regenerate the report using: jmeter -g <testresults.jtl> -o <report_folder>.
-    - unselecting the "Generate parent sample" of the transaction controller and re-running the test.
+    - Unselecting the "Generate parent sample" of the transaction controller and re-running the test.
 - Test will run for a duration of 15 minutes
 - Values of the User Defined Variables can be changed from the command line when running the load test from the CLI except for the hostname which is hardcoded.
