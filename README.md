@@ -1,6 +1,6 @@
 # WebstaurantStore
-JMeter script "Outlet.jmx" is located inside the "Outlet" folder.
-HTML Results "index.html" is located inside the "Outlet/Results" folder.
+- JMeter script "Outlet.jmx" is located inside the "Outlet" folder.
+- HTML Results "index.html" is located inside the "Outlet/Results" folder.
 
 # *** WebstaurantStore Code Screen Task ***
 - This script will extract all products pages URLs from the three outlet pages.
