@@ -14,7 +14,7 @@
   - Throughput is set to 75 requests/min (5 transactions/min).
   - Throughput is controlled by the "Constant Througput Timer".
 - The "clarkAssociates_Outlet_04_product_page" transaction will have the average transaction response time from all the loaded product pages.
-  - If there is a need to see individual product pages response times in the resulting report, it can be accomplished by the following 2 options
+  - If there is a need to see individual product pages response times in the resulting report, it can be accomplished by one of the following 2 options
     - Set jmeter.save.saveservice.subresults=false in your user.properties file. Then, regenerate the report using: jmeter -g <testresults.jtl> -o <report_folder>.
     - unselecting the "Generate parent sample" of the transaction controller and re-running the test.
 - Test will run for a duration of 15 minutes
