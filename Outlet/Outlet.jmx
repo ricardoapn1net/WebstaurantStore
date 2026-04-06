@@ -52,8 +52,6 @@
           </elementProp>
         </collectionProp>
       </elementProp>
-      <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="setUp Thread Group">
@@ -111,7 +109,7 @@
           <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
         </ConfigTestElement>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="clarkAssociates_Outlet_01_outlet_page_1" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="clarkAssociates_Outlet_01_outlet_page_1">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -1711,7 +1709,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="clarkAssociates_Outlet_02_outlet_page_2" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="clarkAssociates_Outlet_02_outlet_page_2">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -2322,7 +2320,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="clarkAssociates_Outlet_03_outlet_page_3" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="clarkAssociates_Outlet_03_outlet_page_3">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -3327,7 +3325,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
           <stringProp name="LoopController.loops">${loopCount}</stringProp>
         </LoopController>
         <hashTree>
@@ -3336,12 +3334,12 @@
             <stringProp name="throughput">${throughput}</stringProp>
           </ConstantThroughputTimer>
           <hashTree/>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="clarkAssociates_Outlet_04_product_page" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="clarkAssociates_Outlet_04_product_page">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="clarkAssociates_Outlet_04_product_page - ${product}" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="clarkAssociates_Outlet_04_product_page - ${product}">
               <stringProp name="HTTPSampler.path">/outlet/${product}</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -3413,7 +3411,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="product" enabled="true">
+              <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="product">
                 <collectionProp name="UserParameters.names">
                   <stringProp name="-309474065">product</stringProp>
                 </collectionProp>
@@ -3423,10 +3421,10 @@
                   </collectionProp>
                 </collectionProp>
                 <boolProp name="UserParameters.per_iteration">false</boolProp>
-                <stringProp name="TestPlan.comments">${__RandomFromMultipleVars(products_page1)}</stringProp>
+                <stringProp name="TestPlan.comments">${__RandomFromMultipleVars(products_page1|products_page2|products_page3)}</stringProp>
               </UserParameters>
               <hashTree/>
-              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="itemTitle" enabled="true">
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="itemTitle">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">itemTitle</stringProp>
                 <stringProp name="RegexExtractor.regex">&lt;title&gt;([^&lt;]+)&lt;/title&gt;</stringProp>
@@ -3437,7 +3435,7 @@
                 <stringProp name="TestPlan.comments">&lt;title&gt;Scratch and Dent Avantco CMA3L Automatic Coffee Maker with 3 Lower Decanter Warmers - 120V, 1650W&lt;/title&gt;</stringProp>
               </RegexExtractor>
               <hashTree/>
-              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="itemNumber" enabled="true">
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="itemNumber">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">itemNumber</stringProp>
                 <stringProp name="RegexExtractor.regex">cleanUrl = &quot;/outlet/[^/]+/([^.]+).html</stringProp>
@@ -3448,7 +3446,7 @@
                 <stringProp name="TestPlan.comments">/outlet/177CMA3L/91399.html</stringProp>
               </RegexExtractor>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="1906942294">Scratch and Dent</stringProp>
                 </collectionProp>
