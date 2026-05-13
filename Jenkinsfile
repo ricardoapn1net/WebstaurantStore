@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo 'Building application...'
             }
-	stage('JMeter') {
+	stage('Performance Test') {
             steps {
                 echo 'Running JMeter script...'
             }
